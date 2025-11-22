@@ -160,3 +160,37 @@ body {
     box-shadow: none !important;
   }
 }
+
+/* Disable heavy/3D animations on small screens to save CPU & battery */
+@media (max-width: 768px) {
+  .stat-hover,
+  .stat-hover::after,
+  .stat-hover:active,
+  .stat-hover:focus,
+  .stat-hover:focus-visible,
+  .pulse-energy,
+  .pulse-energy::before,
+  .wave-number,
+  .fade-up,
+  .animate-on-scroll,
+  .stat-hover:hover {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+
+  /* simplify buttons/ctas motion on mobile */
+  .btn-shine::before {
+    display: none !important;
+  }
+
+  /* remove pointer to avoid hover simulation on touch */
+  .stat-hover {
+    cursor: default !important;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
