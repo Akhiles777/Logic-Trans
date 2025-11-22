@@ -252,7 +252,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="p-6 bg-white rounded-2xl shadow-lg card fade-up" style={{ animationDelay: '140ms' }}>
+          <div className="p-6 bg-white rounded-2xl shadow-lg ">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-md bg-emerald-50 text-emerald-600 flex items-center justify-center">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
