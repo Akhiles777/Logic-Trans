@@ -299,8 +299,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-4">
-              <a href="mailto:pavlov.anatoly@gmail.com?subject=Запрос%20с%20сайта" className="inline-block bg-sky-600 text-white px-4 py-2 rounded-md">Написать</a>
+            <div className="mt-4 flex justify-center">
+              <a href="mailto:pavlov.anatoly@gmail.com?subject=Запрос%20с%20сайта" className="  inline-block bg-sky-600 text-white px-4 py-2 rounded-md">Написать</a>
             </div>
           </div>
 
