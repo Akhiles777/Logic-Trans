@@ -65,27 +65,27 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="bg-white shadow-sm">
+      <section className="bg-white shadow-sm" id="stats">
         <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight fade-up" style={{ animationDelay: '80ms' }}>Логистика сложных промышленных грузов из Европы — под ключ и без рисков</h2>
-            <p className="mt-6 text-lg text-slate-700 fade-up" style={{ animationDelay: '160ms' }}>Меняющиеся правила и задержки — обычная реальность, когда речь о поставках из ЕС. Наша команда с 2006 года берет эти риски на себя: сертификация, ВЭД, выкуп у производителя и гарантированная сохранность оборудования.</p>
+            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">Логистика сложных промышленных грузов из Европы — под ключ и без рисков</h2>
+            <p className="mt-6 text-lg text-slate-700">Меняющиеся правила и задержки — обычная реальность, когда речь о поставках из ЕС. Наша команда с 2006 года берет эти риски на себя: сертификация, ВЭД, выкуп у производителя и гарантированная сохранность оборудования.</p>
             <ul className="mt-8 grid gap-3">
-              <li className="flex gap-3 items-start fade-up" style={{ animationDelay: '220ms' }}>
+              <li className="flex gap-3 items-start">
                 <div className="w-9 h-9 rounded-full bg-sky-600 text-white flex items-center justify-center font-semibold">✓</div>
                 <div>
                   <div className="font-medium">Полное сертификационное сопровождение</div>
                   <div className="text-sm text-slate-600">Оформляем все документы, сертификаты происхождения — вы получаете «белый» груз без рисков.</div>
                 </div>
               </li>
-              <li className="flex gap-3 items-start fade-up" style={{ animationDelay: '260ms' }}>
+              <li className="flex gap-3 items-start">
                 <div className="w-9 h-9 rounded-full bg-emerald-600 text-white flex items-center justify-center font-semibold">⏱</div>
                 <div>
                   <div className="font-medium">Фиксированные сроки доставки</div>
                   <div className="text-sm text-slate-600">Сборные грузы — от 14 дней, онлайн-отслеживание 24/7. Вы всегда знаете, где ваш груз.</div>
                 </div>
               </li>
-              <li className="flex gap-3 items-start fade-up" style={{ animationDelay: '300ms' }}>
+              <li className="flex gap-3 items-start">
                 <div className="w-9 h-9 rounded-full bg-orange-500 text-white flex items-center justify-center font-semibold">🔒</div>
                 <div>
                   <div className="font-medium">Защита инвестиций</div>
@@ -95,8 +95,8 @@ export default function Home() {
             </ul>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href="mailto:pavlov.anatoly@gmail.com" className="inline-block bg-sky-600 text-white px-6 py-3 rounded-md font-semibold shadow hover:bg-sky-700 transform transition active:scale-95 btn-shine" style={{ animationDelay: '360ms' }}>Запросить КП</a>
-              <a href="tel:+79173555007" className="inline-block border border-slate-200 px-6 py-3 rounded-md text-slate-700 hover:bg-slate-50 transform transition active:scale-95 btn-shine" style={{ animationDelay: '420ms' }}>Позвонить: +7 (917) 355-50-07</a>
+              <a href="mailto:pavlov.anatoly@gmail.com" className="inline-block bg-sky-600 text-white px-6 py-3 rounded-md font-semibold shadow hover:bg-sky-700 transform transition active:scale-95 btn-shine">Запросить КП</a>
+              <a href="tel:+79173555007" className="inline-block border border-slate-200 px-6 py-3 rounded-md text-slate-700 hover:bg-slate-50 transform transition active:scale-95 btn-shine">Позвонить: +7 (917) 355-50-07</a>
             </div>
           </div>
 
@@ -104,22 +104,22 @@ export default function Home() {
             <div className="absolute -left-10 -top-10 w-36 h-36 bg-linear-to-br from-cyan-200 to-sky-400 opacity-30 rounded-full blur-3xl"></div>
             <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-linear-to-br from-amber-200 to-orange-300 opacity-30 rounded-full blur-3xl"></div>
             <div className="relative z-10">
-              <h3 className="text-xl font-semibold fade-up" style={{ animationDelay: '480ms' }}>Мы не просто перевозчики — Ваши партнёры</h3>
-              <p className="mt-4 text-slate-600 fade-up" style={{ animationDelay: '520ms' }}>С 2006 года — фокус на сложной логистике для промышленности: подшипники, чувствительное оборудование, крупногабаритные и комплектующие позиции.</p>
+              <h3 className="text-xl font-semibold">Мы не просто перевозчики — Ваши партнёры</h3>
+              <p className="mt-4 text-slate-600">С 2006 года — фокус на сложной логистике для промышленности: подшипники, чувствительное оборудование, крупногабаритные и комплектующие позиции.</p>
               <div className="mt-6 grid grid-cols-2 gap-4">
-                <div className="p-4 bg-white rounded-lg shadow-sm stat-hover fade-up card" style={{ animationDelay: '560ms' }}>
+                <div className="p-4 bg-white rounded-lg shadow-sm stat-hover card">
                   <Counter target={97} suffix="%" className="text-3xl font-bold text-sky-600" />
                   <div className="text-sm text-slate-600">грузов проходят таможню без задержек</div>
                 </div>
-                <div className="p-4 bg-white rounded-lg shadow-sm stat-hover fade-up card" style={{ animationDelay: '620ms' }}>
+                <div className="p-4 bg-white rounded-lg shadow-sm stat-hover card">
                   <Counter target={420} suffix="+" className="text-3xl font-bold text-emerald-600" />
                   <div className="text-sm text-slate-600">успешных поставок таких позиций, как подшипники</div>
                 </div>
-                <div className="p-4 bg-white rounded-lg shadow-sm stat-hover fade-up card" style={{ animationDelay: '680ms' }}>
+                <div className="p-4 bg-white rounded-lg shadow-sm stat-hover card">
                   <Counter target={47} className="text-3xl font-bold text-orange-500" />
                   <div className="text-sm text-slate-600">промышленных предприятий доверили нам поставки</div>
                 </div>
-                <div className="p-4 bg-white rounded-lg shadow-sm stat-hover fade-up card" style={{ animationDelay: '740ms' }}>
+                <div className="p-4 bg-white rounded-lg shadow-sm stat-hover card">
                   <Counter target={24} suffix="h" className="text-3xl font-bold text-violet-600" />
                   <div className="text-sm text-slate-600">онлайн-отслеживание 24/7</div>
                 </div>
@@ -130,19 +130,45 @@ export default function Home() {
       </section>
 
       <section id="process" className="max-w-6xl mx-auto px-6 py-16">
-        <h3 className="text-2xl font-semibold">Как мы работаем — простой и предсказуемый процесс</h3>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 bg-white rounded-lg shadow">
-            <div className="text-sm font-semibold text-sky-600">Шаг 1 — Расчёт</div>
-            <p className="mt-3 text-slate-600">За 24 часа: пришлите список позиций — мы даём расчёт и план доставки.</p>
+        <div className="text-center mb-12">
+          <h3 className="text-3xl font-bold">Как мы работаем</h3>
+          <p className="mt-3 text-lg text-slate-600">Простой и предсказуемый процесс в три этапа</p>
+        </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          {/* Connecting line (hidden on mobile) */}
+          <div className="hidden md:block absolute top-16 left-0 right-0 h-1 bg-linear-to-r from-sky-600 via-emerald-600 to-orange-500" style={{ transform: 'translateY(-50%)' }} />
+          
+          {/* Step 1 */}
+          <div className="relative" style={{ animationDelay: '80ms' }}>
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 rounded-full bg-linear-to-br from-sky-600 to-sky-400 text-white flex items-center justify-center text-3xl font-bold shadow-lg mb-6 stat-hover pulse-energy wave-number">
+                1
+              </div>
+              <h4 className="text-xl font-semibold mb-3">Расчёт</h4>
+              <p className="text-slate-600 leading-relaxed">За 24 часа: пришлите список позиций — мы даём расчёт и план доставки.</p>
+            </div>
           </div>
-          <div className="p-6 bg-white rounded-lg shadow">
-            <div className="text-sm font-semibold text-emerald-600">Шаг 2 — Выкуп и подготовка</div>
-            <p className="mt-3 text-slate-600">Выкуп и подготовка документов за 3–5 дней. Мы заботимся о сертификации и сохранности упаковки.</p>
+
+          {/* Step 2 */}
+          <div className="relative" style={{ animationDelay: '140ms' }}>
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 rounded-full bg-linear-to-br from-emerald-600 to-emerald-400 text-white flex items-center justify-center text-3xl font-bold shadow-lg mb-6 stat-hover pulse-energy wave-number">
+                2
+              </div>
+              <h4 className="text-xl font-semibold mb-3">Выкуп и подготовка</h4>
+              <p className="text-slate-600 leading-relaxed">Выкуп и подготовка документов за 3–5 дней. Мы заботимся о сертификации и сохранности упаковки.</p>
+            </div>
           </div>
-          <div className="p-6 bg-white rounded-lg shadow">
-            <div className="text-sm font-semibold text-orange-500">Шаг 3 — Доставка и сопровождение</div>
-            <p className="mt-3 text-slate-600">Фиксированные сроки, онлайн-отслеживание и приоритетное решение экстренных вопросов.</p>
+
+          {/* Step 3 */}
+          <div className="relative" style={{ animationDelay: '200ms' }}>
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 rounded-full bg-linear-to-br from-orange-500 to-orange-400 text-white flex items-center justify-center text-3xl font-bold shadow-lg mb-6 stat-hover pulse-energy wave-number">
+                3
+              </div>
+              <h4 className="text-xl font-semibold mb-3">Доставка и поддержка</h4>
+              <p className="text-slate-600 leading-relaxed">Фиксированные сроки, онлайн-отслеживание и приоритетное решение экстренных вопросов.</p>
+            </div>
           </div>
         </div>
       </section>
