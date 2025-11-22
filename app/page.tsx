@@ -51,7 +51,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="max-w-6xl mx-auto px-6 py-8 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-md bg-linear-to-br from-sky-600 to-cyan-400 flex items-center justify-center text-white font-bold icon-bounce">EL</div>
+          <img src="/logo.png" alt="Express Logistics" className="h-12 w-auto rounded-xl" />
           <div>
             <h1 className="text-lg font-semibold">Express Logistics</h1>
             <p className="text-sm text-slate-600">Логистика сложных грузов из ЕС — ВЭД и сертификация без рисков</p>
@@ -104,6 +104,16 @@ export default function Home() {
             <div className="absolute -left-10 -top-10 w-36 h-36 bg-linear-to-br from-cyan-200 to-sky-400 opacity-30 rounded-full blur-3xl"></div>
             <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-linear-to-br from-amber-200 to-orange-300 opacity-30 rounded-full blur-3xl"></div>
             <div className="relative z-10">
+              {/* Photo with styled border */}
+              <div className="relative mb-6 rounded-xl overflow-hidden shadow-lg border-4 border-slate-100 hover:shadow-2xl transition-shadow">
+                <img 
+                  src="/photo.jpg" 
+                  alt="Express Logistics - Грузовая логистика" 
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
+              </div>
+
               <h3 className="text-xl font-semibold">Мы не просто перевозчики — Ваши партнёры</h3>
               <p className="mt-4 text-slate-600">С 2006 года — фокус на сложной логистике для промышленности: подшипники, чувствительное оборудование, крупногабаритные и комплектующие позиции.</p>
               <div className="mt-6 grid grid-cols-2 gap-4">
@@ -217,11 +227,60 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h3 className="text-3xl font-bold text-center mb-4">Наша работа в действии</h3>
+        <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">Реальные проекты, настоящие результаты и партнёрские отношения с нашими клиентами</p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Photo 1 */}
+          <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+            <img 
+              src="/photo-2.jpg" 
+              alt="Логистика - Погрузка оборудования" 
+              className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <p className="text-white font-semibold">Профессиональная погрузка и крепление грузов</p>
+            </div>
+          </div>
+
+          {/* Photo 2 */}
+          <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+            <img 
+              src="/photo-3.jpeg" 
+              alt="Логистика - Таможенное оформление" 
+              className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <p className="text-white font-semibold">Полное таможенное оформление и сертификация из EC</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 bg-linear-to-r from-sky-50 to-cyan-50 rounded-2xl p-8 border border-sky-100">
+          <h4 className="text-2xl font-bold text-center mb-6">Почему клиенты возвращаются к нам</h4>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-sky-600 mb-2">18+</div>
+              <p className="text-slate-700">лет опыта в международной логистике</p>
+            </div>
+            <div className="text-center border-l border-r border-slate-200">
+              <div className="text-4xl font-bold text-emerald-600 mb-2">500+</div>
+              <p className="text-slate-700">успешно доставленных грузов</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-orange-500 mb-2">99%</div>
+              <p className="text-slate-700">клиентов рекомендуют нас друзьям</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="max-w-6xl mx-auto px-6 py-12">
         <div className="bg-linear-to-r from-slate-50 to-white rounded-2xl p-8 shadow-lg">
           <div className="md:flex md:items-center md:gap-8">
             <div className="shrink-0">
-              <div className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center text-slate-700">AP</div>
+              <div className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 font-bold">AP</div>
             </div>
             <div className="mt-4 md:mt-0">
               <div className="text-lg font-semibold">Кейс: подшипники для крупного завода — решено без простоев</div>
