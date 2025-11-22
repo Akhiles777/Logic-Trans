@@ -105,10 +105,10 @@ export default function Home() {
             <div className="absolute -left-10 -top-10 w-36 h-36 bg-linear-to-br from-cyan-200 to-sky-400 opacity-30 rounded-full blur-3xl"></div>
             <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-linear-to-br from-amber-200 to-orange-300 opacity-30 rounded-full blur-3xl"></div>
             <div className="relative z-10">
-              {/* Photo with styled border */}
+
               <div className="relative mb-6 rounded-xl overflow-hidden shadow-lg border-4 border-slate-100 hover:shadow-2xl transition-shadow h-64">
-                <Image src="/photo.jpg" alt="Express Logistics - Грузовая логистика" fill className="object-cover" priority />
-                <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
+          <Image src="/photo.opt.jpg" alt="Express Logistics - Грузовая логистика" fill className="object-cover" priority />
+            <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
               </div>
 
               <h3 className="text-xl font-semibold">Мы не просто перевозчики — Ваши партнёры</h3>
@@ -231,16 +231,16 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Photo 1 */}
           <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-80">
-            <Image src="/photo-2.jpg" alt="Логистика - Погрузка оборудования" fill className="object-cover" loading="lazy" />
-            <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <Image src="/photo-2.opt.jpg" alt="Логистика - Погрузка оборудования" fill className="object-cover" loading="lazy" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-100 flex items-end p-6">
               <p className="text-white font-semibold">Профессиональная погрузка и крепление грузов</p>
             </div>
           </div>
 
           {/* Photo 2 */}
           <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-80">
-            <Image src="/photo-3.jpeg" alt="Логистика - Таможенное оформление" fill className="object-cover" loading="lazy" />
-            <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <Image src="/photo-3.opt.jpg" alt="Логистика - Таможенное оформление" fill className="object-cover" loading="lazy" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-100 flex items-end p-6">
               <p className="text-white font-semibold">Полное таможенное оформление и сертификация из EC</p>
             </div>
           </div>
