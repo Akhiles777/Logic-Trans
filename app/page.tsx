@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 import Counter from "./components/Counter";
 
 export const metadata = {
@@ -51,7 +52,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="max-w-6xl mx-auto px-6 py-8 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <img src="/logo.png" alt="Express Logistics" className="h-12 w-auto rounded-xl" />
+          <Image src="/logo.png" alt="Express Logistics" width={48} height={48} className="rounded-xl" />
           <div>
             <h1 className="text-lg font-semibold">Express Logistics</h1>
             <p className="text-sm text-slate-600">Логистика сложных грузов из ЕС — ВЭД и сертификация без рисков</p>
@@ -105,12 +106,8 @@ export default function Home() {
             <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-linear-to-br from-amber-200 to-orange-300 opacity-30 rounded-full blur-3xl"></div>
             <div className="relative z-10">
               {/* Photo with styled border */}
-              <div className="relative mb-6 rounded-xl overflow-hidden shadow-lg border-4 border-slate-100 hover:shadow-2xl transition-shadow">
-                <img 
-                  src="/photo.jpg" 
-                  alt="Express Logistics - Грузовая логистика" 
-                  className="w-full h-64 object-cover"
-                />
+              <div className="relative mb-6 rounded-xl overflow-hidden shadow-lg border-4 border-slate-100 hover:shadow-2xl transition-shadow h-64">
+                <Image src="/photo.jpg" alt="Express Logistics - Грузовая логистика" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
               </div>
 
@@ -233,24 +230,16 @@ export default function Home() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Photo 1 */}
-          <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-            <img 
-              src="/photo-2.jpg" 
-              alt="Логистика - Погрузка оборудования" 
-              className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-            />
+          <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-80">
+            <Image src="/photo-2.jpg" alt="Логистика - Погрузка оборудования" fill className="object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <p className="text-white font-semibold">Профессиональная погрузка и крепление грузов</p>
             </div>
           </div>
 
           {/* Photo 2 */}
-          <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-            <img 
-              src="/photo-3.jpeg" 
-              alt="Логистика - Таможенное оформление" 
-              className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-            />
+          <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-80">
+            <Image src="/photo-3.jpeg" alt="Логистика - Таможенное оформление" fill className="object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <p className="text-white font-semibold">Полное таможенное оформление и сертификация из EC</p>
             </div>
