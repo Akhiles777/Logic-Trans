@@ -281,60 +281,66 @@ export default function Home() {
       </section>
 
       <section id="contacts" className="max-w-6xl mx-auto px-6 py-16">
-        <h3 className="text-2xl font-semibold">Связаться с нами</h3>
-        <p className="mt-3 text-slate-600">Отправьте список оборудования или опишите текущую проблему — ответим с коммерческим предложением и планом.</p>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 bg-white rounded-2xl shadow-lg card fade-left" style={{ animationDelay: '80ms' }}>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-md bg-sky-50 text-sky-600 flex items-center justify-center">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/><path d="M7 10l5 5 5-5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </div>
+        <div className="text-center mb-8">
+          <h3 className="text-2xl font-bold">Связаться с нами</h3>
+          <p className="mt-2 text-slate-600">Быстрый контакт — телефон, email или запрос прайса. Выберите удобный способ.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center font-bold">☎</div>
               <div>
                 <h4 className="font-semibold">Центральный запрос</h4>
-                <p className="text-sm text-slate-600">Тел: <a className="text-sky-600" href="tel:+79173555007">+7 (917) 355-50-07</a></p>
-                <p className="text-sm text-slate-600">Email: <a className="text-sky-600" href="mailto:pavlov.anatoly@gmail.com">pavlov.anatoly@gmail.com</a></p>
+                <p className="text-sm text-slate-600 mt-1">Телефон и email для срочных и коммерческих вопросов</p>
+                <div className="mt-3 flex flex-col gap-2">
+                  <a className="inline-block text-sky-600 font-medium" href="tel:+79173555007">+7 (917) 355-50-07</a>
+                  <a className="inline-block text-sky-600 font-medium" href="mailto:pavlov.anatoly@gmail.com">pavlov.anatoly@gmail.com</a>
+                </div>
               </div>
             </div>
             <div className="mt-4">
-              <a className="inline-block bg-sky-600 text-white px-4 py-2 rounded-md btn-shine" href="mailto:pavlov.anatoly@gmail.com">Написать</a>
+              <a href="mailto:pavlov.anatoly@gmail.com?subject=Запрос%20с%20сайта" className="inline-block bg-sky-600 text-white px-4 py-2 rounded-md">Написать</a>
             </div>
           </div>
 
-          <div className="p-6 bg-white rounded-2xl shadow-lg ">
+          <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-md bg-emerald-50 text-emerald-600 flex items-center justify-center">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </div>
+              <div className="w-12 h-12 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">С</div>
               <div>
-                <h4 className="font-semibold">Сочи</h4>
-                <p className="text-sm text-slate-600">ул. Голенева, 36</p>
-                <p className="text-sm text-slate-600">Тел: <a className="text-sky-600" href="tel:+79173887486">+7 (917) 388-74-86</a></p>
+                <h4 className="font-semibold">Сочи — офис</h4>
+                <p className="text-sm text-slate-600 mt-1">ул. Голенева, 36</p>
+                <div className="mt-3">
+                  <a className="text-sky-600 font-medium" href="tel:+79173887486">+7 (917) 388-74-86</a>
+                </div>
               </div>
             </div>
-            <div className="mt-4">
-              <a className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-md btn-shine" href="mailto:ozhiganova@express.ru">Написать</a>
+            <div className="mt-4 flex gap-3">
+              <a href="mailto:ozhiganova@express.ru" className="inline-block bg-emerald-600 text-white px-3 py-2 rounded-md">Написать</a>
+              <a href="https://yandex.ru/maps/?text=%D1%83%D0%BB.%20%D0%93%D0%BE%D0%BB%D0%B5%D0%BD%D0%B5%D0%B2%D0%B0%2036%20%D0%A1%D0%BE%D1%87%D0%B8" target="_blank" rel="noopener noreferrer" className="inline-block border border-slate-200 px-3 py-2 rounded-md text-slate-700">Показать на карте</a>
             </div>
           </div>
 
-          <div className="p-6 bg-white rounded-2xl shadow-lg card fade-right" style={{ animationDelay: '200ms' }}>
+          <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-md bg-orange-50 text-orange-500 flex items-center justify-center">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5h18" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/><path d="M3 19h18" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/><path d="M8 5v14" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </div>
+              <div className="w-12 h-12 rounded-lg bg-orange-50 text-orange-500 flex items-center justify-center font-bold">У</div>
               <div>
-                <h4 className="font-semibold">Уфа</h4>
-                <p className="text-sm text-slate-600">ул. Цюрупы, 128</p>
-                <p className="text-sm text-slate-600">Тел: <a className="text-sky-600" href="tel:+79174305323">+7 (917) 430-53-23</a></p>
+                <h4 className="font-semibold">Уфа — офис</h4>
+                <p className="text-sm text-slate-600 mt-1">ул. Цюрупы, 128</p>
+                <div className="mt-3">
+                  <a className="text-sky-600 font-medium" href="tel:+79174305323">+7 (917) 430-53-23</a>
+                </div>
               </div>
             </div>
-            <div className="mt-4">
-              <a className="inline-block bg-orange-500 text-white px-4 py-2 rounded-md btn-shine" href="mailto:ufa@express.ru">Написать</a>
+            <div className="mt-4 flex gap-3">
+              <a href="mailto:ufa@express.ru" className="inline-block bg-orange-500 text-white px-3 py-2 rounded-md">Написать</a>
+              <a href="https://yandex.ru/maps/?text=%D1%83%D0%BB.%20%D0%A6%D1%8E%D1%80%D1%83%D0%BF%D1%8B%2C%20128%20%D0%A3%D1%84%D0%B0" target="_blank" rel="noopener noreferrer" className="inline-block border border-slate-200 px-3 py-2 rounded-md text-slate-700">Показать на карте</a>
             </div>
           </div>
         </div>
 
         <div className="mt-8">
-          <p className="text-sm text-slate-500">P.S. Срочный запрос или сложность с конкретным грузом? Ответьте на это письмо — найдем решение в приоритетном порядке.</p>
+          {/* Блок "Быстрая справка" удалён по запросу — контакты находятся выше */}
         </div>
       </section>
 
